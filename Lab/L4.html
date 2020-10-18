@@ -13,11 +13,11 @@ remainder = num%10;
 num = parseInt(num/10); 
 rev = rev * 10 + remainder;
 }
-else
-{
-}
 alert("Reverse of "+str+" is "+rev);
 alert("The String is palindrome");
+}
+else
+{
 str = str.toUpperCase();
 for(var i = 0; i < str.length; i++) { 
 var chr = str.charAt(i);
@@ -26,8 +26,8 @@ if(chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U')break;
 if ( i < str.length )
 alert ("The position of the left most vowel is "+(i+1));
 else
+alert ("No vowel found in the entered string");
 }
 </script>
-alert ("No vowel found in the entered string");
 </body>
 </html>
