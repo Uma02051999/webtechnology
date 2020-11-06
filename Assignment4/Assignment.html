@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title> Login Page</title>
+	<h1> Login Form</h1>
+	<script>
+		document.getElementById("loginForm").onsubmit = function(e){
+		var fieldValue=document.getElementByID("username").value;
+		if(fieldValue==null || fieldValue== ""){
+		// the field was empty. Stop form submission
+		e.preventDefault();
+		// Now tell the user something went wrong
+		alert("you must enter a username");
+		}
+		}
+	</script>
+
+</head>
+<body>
+	<form id='loginForm'>
+	Username
+	<input  type='text' name='username' id='username' value=' '/> 
+	</br></br>	
+	Password
+	<input type='password' name='password' id='password'/>
+	</br></br>
+	<input type='reset'></input>
+	<input type='submit'></input>
+	</form>
+</body>
+</html>
